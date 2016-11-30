@@ -1,0 +1,50 @@
+
+
+@media all and (min-width: 768px) {
+  #container {
+    /* max-width: 360px; */
+
+    /* flexbox */
+    display: -webkit-flex;    /* declares that this is flex container */
+    flex-direction: column;   /* establishes the main axis */
+    align-items: flex-start;  /* defines how flex items are laid out along the cross axis */
+    flex-wrap: wrap;          /* breaks flex items into multiple lines */
+  }    
+  .card-a {
+    width: 634px;
+  }
+  .card-b {
+    order: 1;  /* determines which flex items appear first */
+    width: 311px;
+  }
+  .hero {
+    width: 360px;
+  }
+
+  /* two-thirds/one-third backwards */
+  .backwards .a {
+    width: 100px;
+  }
+  .backwards .b {
+    width: 200px;
+  }
+ 
+  /* thirds */
+  #container.thirds {
+    max-width: 390px;
+  }
+  .thirds .a {
+    width: 100px;
+  }
+  .thirds .c {
+    order: 2;
+  }
+
+  /* halves */
+  #container.halves {
+    max-width: 390px;
+  }
+  #container.halves .card {
+    width: 160px;
+  }
+}
