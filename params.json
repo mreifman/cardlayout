@@ -1,0 +1,6 @@
+{
+  "name": "Cardlayout",
+  "tagline": "",
+  "body": "# cardlayout\r\n\r\nCSS and JavaScript for a mobile-first responsive layout that re-organizes\r\ncontent blocks into multiple columns on wider screens. For example:\r\n\r\nMobile:\r\n```\r\n1\r\n2\r\n3\r\n```\r\nDesktop:\r\n```\r\n1 2\r\n3\r\n```\r\n\r\nThe initial goal was to implement only with CSS in order to avoid moving \r\nDOM nodes. I came close with `display: flex`, but there were two issues:\r\n\r\n1. A container height needs to be set to force items to flow into a new column\r\n2. Items can flow into an adjacent column if that columns is shorter than its neighbor\r\n\r\nThe implementation needed some JavaScript to measure the height of the\r\ntallest column and add spacers at the bottom of shorter columns to fill\r\nthem out.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
