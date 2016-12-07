@@ -24,3 +24,10 @@ DOM nodes. I came close with `display: flex`, but there were two issues:
 The implementation needed some JavaScript to measure the height of the
 tallest column and add spacers at the bottom of shorter columns to fill
 them out.
+
+#### Demos
+* [Two columns, two-thirds/one-third split](twothirdsonethird.html)
+* [Two columns, two-thirds/one-third split (alternate ordering)](twothirdsonethird_alt.html)
+* [Two columns, one-third/two-thirds split](backwards.html)
+* [Two even columns](halves.html)
+* [Three even columns](thirds.html)
