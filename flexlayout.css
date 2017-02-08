@@ -1,5 +1,21 @@
 body {
+  font-family: Helvetica;
   margin: 0;
+}
+
+#mobile-guide {
+  background: whitesmoke;
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 500px;
+  z-index: -1;
+}
+
+#mobile-guide span {
+  bottom: 10px;
+  left: 10px;
+  position: absolute;
 }
 
 .aff-1 {
@@ -16,7 +32,6 @@ body {
 
 .card {
   color: white;
-  font-family: Helvetica;
   font-size: 40px;
   height: 100px;
   margin: 5px;
@@ -32,6 +47,10 @@ body {
 }
 
 @media all and (min-width: 500px) {
+  #mobile-guide {
+    display: block;
+  }
+
   #container {
     align-items: flex-start;  /* defines how flex items are laid out along the cross axis */
     display: -webkit-flex;    /* declares that this is flex container */

@@ -4,7 +4,7 @@ var LayoutManager = function() {
   if (this.container.className == 'thirds') {
     this.columns.push('c');
   };
-  this.isLayoutNarrow;
+  //this.isLayoutNarrow;
   this.updateLayout();
 };
 
